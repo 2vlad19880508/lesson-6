@@ -15,73 +15,65 @@ $arr = [['name' => 'Yan', 'salery' => '1200', 'work_hours' => 180],
  
 // задание 1
 echo '<br>Всем сотрудникам у кого ЗП меньше 1600 добавить 100';
+echo '<table border=1px width=200px>';
 $salery = array_map( 
         function($salery) { 
 		if ($salery['salery'] < 1600) {
-			echo '<table border=1px width=200px>';
 			echo '<tr>';
 			echo '<td width=100px>' . $salery['name'] . '</td>'; 
 			$bonus = $salery['salery'] + 100;
 			echo '<td width=100px>' . $bonus . '</td>'; 
 			echo '</tr>';
-			echo '<table>';
 		}
 		}, 
         $arr 
 ); 
+echo '<table>'; 
 
-
- 
 // задание 2
 echo '<br>Сотрудники которые отработали больше 180 часов добавили премии 20 %';
+echo '<table border=1px width=200px>';
 $work_hours = array_map( 
         function($work_hours) { 
 		if ($work_hours['work_hours'] > 180) {
-			echo '<table border=1px width=200px>';
 			echo '<tr>';
 			echo '<td width=100px>' . $work_hours['name'] . '</td>'; 
 			echo '<td width=100px>' . $work_hours['salery'] * 1.2 . '</td>'; 
 			echo '</tr>';
-			echo '<table>';
 		}
 		}, 
         $arr 
 ); 
+echo '<table>';
 
-
-  
 // задание 3
 echo '<br>Сотрудники которые отработали меньше 160 часов';
+echo '<table border=1px width=200px>';
 $work_hours2 = array_map( 
         function($work_hours2) { 
 		if ($work_hours2['work_hours'] < 160) {
-			echo '<table border=1px width=200px>';
 			echo '<tr>';
 			echo '<td width=100px>' . $work_hours2['name'] . '</td>'; 
 			echo '<td width=100px>' . $work_hours2['work_hours'] . '</td>'; 
 			echo '</tr>';
-			echo '<table>';
 		}
 		}, 
         $arr 
 ); 
+echo '<table>';
 
-
-   
 // задание 4
-
 echo '<br>Сотрудники с зп меньше 2000';
+echo '<table border=1px width=200px>';
 $salery2 = array_map( 
         function($salery2) { 
 		if ($salery2['salery'] < 2000) {
-			echo '<table border=1px width=200px>';
 			echo '<tr>';
 			echo '<td width=100px>' . $salery2['name'] . '</td>'; 
 			echo '<td width=100px>' . $salery2['salery'] . '</td>'; 
 			echo '</tr>';
-			echo '<table>';
 		}
 		}, 
         $arr 
 ); 
-
+echo '<table>';
