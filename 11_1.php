@@ -1,16 +1,16 @@
 <?php 
 $arr = [
 	['name' => 'Yan', 'salary' => '1200', 'work_hours' => 180],
-    ['name' => 'Barda', 'salary' => '2150', 'work_hours' => 160],
-    ['name' => 'Piter', 'salary' => '1500', 'work_hours' => 160],
-    ['name' => 'Alex', 'salary' => '3340', 'work_hours' => 167],
-    ['name' => 'Deiv', 'salary' => '1700', 'work_hours' => 176],
-    ['name' => 'Bob', 'salary' => '1150', 'work_hours' => 182],
-    ['name' => 'Claus', 'salary' => '2810', 'work_hours' => 155],
-    ['name' => 'Lina', 'salary' => '1600', 'work_hours' => 169],
-    ['name' => 'Rod', 'salary' => '2780', 'work_hours' => 191],
-    ['name' => 'Kristy', 'salary' => '2180', 'work_hours' => 144],
-    ['name' => 'Ron', 'salary' => '1670', 'work_hours' => 157],
+   	['name' => 'Barda', 'salary' => '2150', 'work_hours' => 160],
+	['name' => 'Piter', 'salary' => '1500', 'work_hours' => 160],
+	['name' => 'Alex', 'salary' => '3340', 'work_hours' => 167],
+        ['name' => 'Deiv', 'salary' => '1700', 'work_hours' => 176],
+        ['name' => 'Bob', 'salary' => '1150', 'work_hours' => 182],
+        ['name' => 'Claus', 'salary' => '2810', 'work_hours' => 155],
+        ['name' => 'Lina', 'salary' => '1600', 'work_hours' => 169],
+        ['name' => 'Rod', 'salary' => '2780', 'work_hours' => 191],
+        ['name' => 'Kristy', 'salary' => '2180', 'work_hours' => 144],
+        ['name' => 'Ron', 'salary' => '1670', 'work_hours' => 157],
 ];
 
 $arr = array_map(function ($salary) {
