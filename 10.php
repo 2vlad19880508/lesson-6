@@ -14,17 +14,17 @@ foo(5671);
 echo '<BR>';
 
 // задача 2
-$n = 10;
+$num = 9;
+function recursion($curIndex, $n)
+{
 
-function func($cur, $idx, $cnt) {
-    if ($idx === 0)
-        return;
-    if ($cnt === 0) {
-        $cur++;
-        $cnt = $cur;
+    for ($i = 1; $i <= $curIndex; $i++) {
+        echo $curIndex . ' ';
     }
-    echo $cur . ' ';
-    func($cur, $idx - 1, $cnt - 1);
+
+    if ($curIndex != $n) {
+        recursion(++$curIndex, $n);
+    }
 }
 
-func(1, $n, 1);
+recursion(1, $num);
