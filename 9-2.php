@@ -24,7 +24,7 @@ function sub($num1, $num2)
 function operation($numOne, $numTwo, $callback)
 {
 	if ($callback == 'add') {
-		sub($numOne, $numTwo);
+		add($numOne, $numTwo);
 	} elseif ($callback == 'sub') {
 		sub($numOne, $numTwo);
 	} else {
@@ -32,10 +32,4 @@ function operation($numOne, $numTwo, $callback)
 	}
 }
 
-operation(70,8,'sub');
-
-
-
-
-
-
+operation(70,8,'add');
