@@ -1,3 +1,4 @@
+<?php
 /* 2) Создайте две функции add() и sub(), которые принимают пару аргументов и возвращают сумму и разницу соответственно. 
 Создайте функцию operation(), которая принимает два числовых аргумента $numOne и $numTwo, и третий строковый - имя функции которую нужно 
 вызвать для выполнения операции над числамы.
@@ -20,15 +21,21 @@ function sub($num1, $num2)
 
 
 
-function operation($a, $b, $callback)
+function operation($numOne, $numTwo, $callback)
 {
 	if ($callback == 'add') {
-		add($a, $b);
+		sub($numOne, $numTwo);
 	} elseif ($callback == 'sub') {
-		sub($a, $b);
+		sub($numOne, $numTwo);
 	} else {
 		echo 'Задано некоректное значение';
 	}
 }
 
-operation(7,8,'sub');
+operation(70,8,'sub');
+
+
+
+
+
+
